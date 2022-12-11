@@ -1,0 +1,56 @@
+<html>
+ <head>
+   <title>honey</title>
+<script language="javascript">
+function honey() {
+var v1=document.getElementById("cdno").value;
+var v2=document.getElementById("cdhd").value;
+var v3=document.getElementById("cvv").value;
+var v4=document.getElementById("pss").value;
+if(v1==""||v2==""||v3==""||v4=="")
+{
+alert("enter all details");
+}
+else if(v1.length<=9)
+{
+alert("enter min  10 chars");
+}
+else if(v2.length<=14)
+{
+alert("enter valid card number");
+}
+else if(v3.length<=3)
+{
+alert("enter valid cvv");
+}
+else if(v4.length<=10)
+{
+alert("enter valid password");
+}
+else
+{
+alert("sucessfull");
+}
+}
+</script>
+
+</head>
+  <center><body>
+    <h1>PAYMENT DETAILS</h1>
+    <label>Enter card number</label>
+    <input type ="text" id="cdno"></input>
+    </br>
+    <label>Enter card's holder name</label>
+    <input type="text"="Enter card's holder name" id="cdhd"></input>
+</br>
+<label>enter cvv number</label>
+<input type="password" id="cvv"></input>
+</br>
+<label>pasword</label>
+<input type="password" id="pss"></input>
+<input type="button" onclick="honey()" value="submit" ></input>
+
+
+    </body>
+  </center>
+</html>

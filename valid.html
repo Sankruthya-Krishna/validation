@@ -1,0 +1,33 @@
+                                                                                 <html>
+<head><title>validation</title>
+<script language="Javascript">
+function fun(){
+var uname1=document.getElementById("uname").value;
+var pswd1=document.getElementById("pswd").value;
+if(uname1==""||pswd1=="")
+{
+alert("enter details");
+}
+else if(uname1.length<10)
+{
+alert("enter minimum characters in username");
+}
+else if(pswd1.length<8)
+{
+alert("password must contains 8 characters");
+}
+else
+{
+alert("login done");
+}
+}
+</script></head>
+<body><center>
+<label>username</label>
+<input type="text" id="uname"></input>
+</br>
+<label>password</label>
+<input type="password" id="pswd"></input>
+</br>
+<input type="button" onClick ="fun()"value="submit"</input>
+</center></body></html>

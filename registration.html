@@ -1,0 +1,100 @@
+<html><!DOCTYPE html>
+<html>
+<head>
+<title>registration</title>
+<script language="Javascript">
+function fav(){
+var uname1=document.getElementById("uname").value;
+var pswd1=document.getElementById("pswd").value;
+var email1=document.getElementById("email").value;
+var phno1=document.getElementById("phno").value;
+var adrs1=document.getElementById("address").value;
+if(uname1==""||pswd1==""||email1==""||phno1==""||adrs1==""||gender==""||dob==""||language=="")
+{
+alert("enter all details");
+}
+else if(uname1.length<10)
+{
+alert("enter max chars in username");
+}
+else if(pswd1.length<5)
+{
+alert("pswd must contain 5 chars");
+}
+else if(email1.length<15)
+{
+alert("enter valid email");
+}
+else if(phno1.length<10)
+{
+alert("incorrect phno");
+}
+else if(adrs1.length<11)
+{
+alert("invalid address");
+}
+else if(document.getElementById("gender").checked=="false")
+{
+alert("select gender");
+}
+else if(document.getElementById("dob").checked=="false")
+{
+alert("invalid dob");
+}
+else if(document.getElementById("language").checked=="false")
+{
+alert("select languages");
+}
+else
+{
+alert("registration done");
+}
+}</script></head>
+<body><center>
+<form action="home">
+<h1><center>Registration form<center></h1>
+<label>name</label>
+<input type="text" id="uname"></input>
+<br/>
+<label>password</label>
+<input type="password" id="pswd"></input >
+<br/>
+<label>email</label>
+<input type="text" id="email"></input >
+<br/>
+<label>phone number </label>
+<input type ="text" id="phno"></input >
+<br/>
+<label >gender </label >
+<input type ="radio" id ="gender" name="gend">female</input>
+
+<input type ="radio" id ="gender"name="gend">male</input>
+<br/>
+<label >dob</label >
+<select id="dob" >
+<option >1</option >
+<option >4</option >
+<option>3</option>
+</select >
+<select id="dob">
+<option >06</option >
+<option >03</option >
+<option >12</option >
+
+</select>
+<select id="dob">
+<option>2002</option >
+<option >2003</option >
+</select>
+<br/>
+<label >address</label >
+<textarea rows ="" cols="" id="address"></textarea>
+<br/>
+<label>language known </label >
+<input type ="checkbox" id="language">Telugu</input>
+<input type ="checkbox" id="language">English </input>
+<br/>
+<input type ="button" onclick="fav()" value="submit"></input>
+</form></center>
+</body>
+</html>
